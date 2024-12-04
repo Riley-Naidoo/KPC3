@@ -10,6 +10,40 @@
     <link rel="stylesheet" href="css/footer.css">
     <script defer src="js/nav.js"></script>
 
+    <meta name="description" content="KPC3 International offers innovative solutions to help businesses scale and succeed globally. Explore our services in technology, consulting, and business development.">
+
+<!-- Meta Keywords for SEO -->
+<meta name="keywords" content="KPC3 International, business solutions, technology consulting, global business, business development, innovation, growth, scaling businesses">
+
+<!-- Author -->
+<meta name="author" content="KPC3 International">
+
+<!-- Open Graph Meta Tags for Facebook and Instagram -->
+<meta property="og:title" content="KPC3 International | Innovative Business Solutions">
+<meta property="og:description" content="Discover how KPC3 International can help your business grow with cutting-edge technology and expert consulting.">
+<meta property="og:image" content="https://example.com/path-to-your-image.jpg">
+<meta property="og:image:alt" content="KPC3 International banner showcasing innovative business solutions">
+<meta property="og:url" content="https://example.com">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KPC3 International">
+<meta property="fb:app_id" content="YOUR_FACEBOOK_APP_ID">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KPC3 International | Innovative Business Solutions">
+<meta name="twitter:description" content="Discover how KPC3 International can help your business grow with cutting-edge technology and expert consulting.">
+<meta name="twitter:image" content="https://example.com/path-to-your-image.jpg">
+
+<!-- Instagram Meta Tags -->
+<meta name="instagram:card" content="summary_large_image">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="instagram:title" content="KPC3 International | Innovative Business Solutions">
+<meta name="instagram:description" content="Discover how KPC3 International can help your business grow with cutting-edge technology and expert consulting.">
+
+<!-- Favicon -->
+<link rel="icon" href="img/logo-sm.jpg" type="image/x-icon">
+
 </head>
 <body>
     <div class="off-screen-menu">
@@ -85,17 +119,17 @@
             <p class="hero-p1">
                 Expert Accounting, Payroll, Taxation, and Business Management Services – We handle the numbers, so you can focus on what matters most: growing your business.
             </p>
-            <button class="hero-button">Contact Us</button>
+            <button class="hero-button" onclick="window.location.href='contact.html'">Contact Us</button>
         </div>
     </section>
 
     <section class="section-4">
-        <div class="s4-block" id="s4-block1">
+        <div class="s4-block" id="s4-block1" onclick="window.location.href='services.html'">
             <h1 class="s4-block1-h1">Our Practice Areas</h1>
-            <p class="s4-block1-p1">See All Practice Areas -></p>
+            <a class="s4-block1-p1" href="services.html">See All Practice Areas →</a>
         </div>
 
-        <div class="s4-block">
+        <div class="s4-block" onclick="window.location.href='services.html'">
             <i class="fas fa-calculator"></i>
             <h1 class="s4-block-h1">Accounting</h1>
             <p class="s4-block-p1">
@@ -103,35 +137,35 @@
             </p>
         </div>
 
-        <div class="s4-block">
+        <div class="s4-block" onclick="window.location.href='services.html'">
             <i class="fas fa-money-bill-wave"></i>
             <h1 class="s4-block-h1">Payroll Services</h1>
             <p class="s4-block-p1">
                 We provide timely and accurate payroll processing, tax calculations, and compliance with labor laws.
             </p>
         </div>
-        <div class="s4-block">
+        <div class="s4-block" onclick="window.location.href='services.html'">
             <i class="fas fa-file-invoice-dollar"></i>
             <h1 class="s4-block-h1">SARS Compliance</h1>
             <p class="s4-block-p1">
                 We ensure your business remains compliant with the SARS requirements, including tax filing and reporting.
             </p>
         </div>
-        <div class="s4-block">
+        <div class="s4-block" onclick="window.location.href='services.html'">
             <i class="fas fa-briefcase"></i>
             <h1 class="s4-block-h1">Labour Department</h1>
             <p class="s4-block-p1">
                 We assist with ensuring adherence to labor laws, including employee contracts, UIF, and workman’s compensation compliance.
             </p>
         </div>
-        <div class="s4-block">
+        <div class="s4-block" onclick="window.location.href='services.html'">
             <i class="fas fa-hard-hat"></i>
             <h1 class="s4-block-h1">CIDB</h1>
             <p class="s4-block-p1">
                 We help construction businesses with CIDB registration and compliance to access government contracts and opportunities.
             </p>
         </div>
-        <div class="s4-block">
+        <div class="s4-block" onclick="window.location.href='services.html'">
             <i class="fas fa-database"></i>
             <h1 class="s4-block-h1">CSD</h1>
             <p class="s4-block-p1">
@@ -140,7 +174,7 @@
         </div>
 
        
-        <div class="s4-block">
+        <div class="s4-block" onclick="window.location.href='services.html'">
             <i class="fas fa-search-dollar"></i>
             <h1 class="s4-block-h1">Auditing</h1>
             <p class="s4-block-p1">
@@ -202,7 +236,7 @@
     <section class="section-1">
         <div class="s1-c1">
             <h1 class="s1-c1-h1">
-                WE DEVELOP BUSINESS SOLUTIONS
+                WE DEVELOP <span class="highlight">BUSINESS SOLUTIONS</span>
             </h1>
             <p class="s1-c1-p1">
                 We Deliver Simple Solutions for Complex Problems that drive Revenue Expansion, Sustainable Profits, and Cash Flow through integration and networking.
@@ -347,7 +381,23 @@
                 <input type="text" name="" id="" placeholder="Name" class="s5-inputs">
                 <input type="email" name="" id="" placeholder="Email" class="s5-inputs">
                 <input type="tel" name="" id="" placeholder="Number" class="s5-inputs">
-                <input type="text" name="" id="" placeholder="Service" class="s5-inputs">
+                <select name="service" id="service" class="s5-inputs" required>
+                    <option value="" disabled selected>Select a Service</option>
+                    <option value="accounting">Accounting</option>
+                    <option value="payroll-services">Payroll Services</option>
+                    <option value="sars-compliance">SARS Compliance</option>
+                    <option value="labour-department">Labour Department</option>
+                    <option value="cidb">CIDB</option>
+                    <option value="csd">CSD</option>
+
+                    <option value="auditing">Auditing</option>
+                    <option value="taxation">Taxation</option>
+                    <option value="business-management">Business Management</option>
+                    <option value="management-consulting">Management Consulting</option>
+                    <option value="business-rescue">Business Rescue</option>
+                    <option value="department-of-trade-&-industry">Department of Trade & Industry: Grants and Incentives</option>
+                    <option value="trusts">Trusts</option>
+                </select>
                 <button class="s5-button">Submit</button>
 
 
@@ -358,7 +408,7 @@
     <footer class="footer">
         <div class="footer-block" id="footer-block1">
             <div class="f1-block">
-                <img src="img/logo-sm.jpg" alt="" class="footer-logo">
+                <img src="img/logo-sm.jpg" alt="KPC3 International Logo" class="footer-logo" loading="lazy">
                 <p class="f1-p1">
                     KPC3 International is a professional services firm dedicated to assisting businesses and individuals with expert guidance across various legal, financial, and regulatory matters. Our team provides comprehensive solutions to help clients navigate complex processes, ensuring compliance and supporting their growth and success with tailored, strategic advice.
                 </p>
@@ -381,31 +431,28 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="index.html">About</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="index.html">Services</a>
+                        <a href="services.html">Services</a>
                     </li>
                     <li>
-                        <a href="index.html">Our Group</a>
-                    </li>
-                    <li>
-                        <a href="index.html">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
             <div class="f1-block" id="f1-block3">
                 <div class="branch-1">
-                    <h1 class="b1-h1">Durban</h1>
-                    <p class="b1-p1">123 Anywhere Street</p>
-                    <p class="b1-p1">123 123 1234</p>
+                    <h1 class="b1-h1">Isipingo</h1>
+                    <p class="b1-p1">14 Saunders Ave, Isipingo Hills, Isipingo, 4133</p>
+                    <p class="b1-p1">031 902 2467</p>
                     <p class="b1-p1">info@kpc3.co.za</p>
                 </div>
                 <div class="branch-1">
-                    <h1 class="b1-h1">Durban</h1>
-                    <p class="b1-p1">123 Anywhere Street</p>
-                    <p class="b1-p1">123 123 1234</p>
-                    <p class="b1-p1">info@kpc3.co.za</p>
+                    <h1 class="b1-h1">Morningside</h1>
+                    <p class="b1-p1">69 Henwood Rd, Morningside, Durban, 4001</p>
+                    <p class="b1-p1">031 303 4711</p>
+                    <p class="b1-p1">kayceeadmin2@mweb.co.za</p>
                 </div>
                 
             </div>
