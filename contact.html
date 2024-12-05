@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
     <script defer src="js/nav.js"></script>
+        <!-- AOS CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+        <!-- AOS JS -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 </head>
 <body>
@@ -78,7 +83,7 @@
         
     </nav>
     <section class="hero" style="background-image: url(img/hero.jpg);">
-        <div class="hero-s1">
+        <div class="hero-s1"   data-aos="fade-right"  data-aos-duration="1500">
             <h1 class="hero-h1">
                 Streamline Your Success
             </h1>
@@ -100,9 +105,9 @@
             <hr class="s5-hr">
 
             <p class="s5-c1-p1">
-                Business is a marketing discipline focused on growing visibility in organic search engine results.encompasses both the technical and creative elements required to improve rankings, drive traffic, and increase awareness in search engines
+                Let us help you find the best solutions for your business needs. Book a free consultation today!
             </p>
-            <h3 class="s5-c1-h3">How Can We Help?</h3>
+            <h3 class="s5-c1-h3" style="font-size: 18px;">How Can We Help?</h3>
 
             
         </div>
@@ -135,7 +140,7 @@
         </div>
     </section>
 
-    <section class="section-4">
+    <section class="section-4"   data-aos="fade-up"  data-aos-duration="1500">
         <div class="s3-c1">
             <h1 class="s3-c1-h1">
                 Our <span class="highlight">Branches</span>
@@ -243,6 +248,8 @@
         </p>
     </footer>
 
-    
+    <script>
+        AOS.init();
+      </script> 
 </body>
 </html>

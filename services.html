@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
     <script defer src="js/nav.js"></script>
+        <!-- AOS CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+        <!-- AOS JS -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 </head>
 <body>
@@ -78,7 +83,7 @@
         
     </nav>
     <section class="hero" style="background-image: url(img/hero.jpg);">
-        <div class="hero-s1">
+        <div class="hero-s1" data-aos="fade-right"  data-aos-duration="1500">
             <h1 class="hero-h1">
                 Streamline Your Success
             </h1>
@@ -106,7 +111,7 @@
             <i class="fas fa-money-bill-wave"></i>
             <h1 class="s4-block-h1">Payroll Services</h1>
             <p class="s4-block-p1">
-                We provide timely and accurate payroll processing, tax calculations, and compliance with labor laws.
+                We provide timely and accurate payroll processing, tax calculations, and compliance with labour laws.
             </p>
         </div>
         <div class="s4-block">
@@ -120,7 +125,7 @@
             <i class="fas fa-briefcase"></i>
             <h1 class="s4-block-h1">Labour Department</h1>
             <p class="s4-block-p1">
-                We assist with ensuring adherence to labor laws, including employee contracts, UIF, and workman’s compensation compliance.
+                We assist with ensuring adherence to labour laws, including employee contracts, UIF, and workman’s compensation compliance.
             </p>
         </div>
         <div class="s4-block">
@@ -198,15 +203,15 @@
     </section>
 
     <section class="section-1">
-        <div class="s1-c1">
+        <div class="s1-c1"   data-aos="fade-right"  data-aos-duration="1500">
             <h1 class="s1-c1-h1">
                 WE DEVELOP <span class="highlight">BUSINESS SOLUTIONS</span>
             </h1>
             <p class="s1-c1-p1">
-                We Deliver Simple Solutions for Complex Problems that drive Revenue Expansion, Sustainable Profits, and Cash Flow through integration and networking.
+                We deliver Simple Solutions for Complex Problems that drive Revenue Expansion, Sustainable Profits, and Cash Flow through Integration and Networking.
             </p>
             <p class="s1-c1-p2">
-                We do this in an ethical and honest manner and will earn the respect of our clients by demonstrating our competence and professionalism in conducting business relationships.
+                Striving to deliver in an ethical and honest manner, we aim to earn the respect of our clients by demonstrating our competence and professionalism when conducting business relationships.
             </p>
             <a href="contact.html" class="s1-c1-a1">
                 Read More About Us
@@ -216,34 +221,33 @@
             <div class="progress-bar-container">
                 <div class="label">Businesses Rescued</div>
                 <div class="progress-barr">
-                  <div class="progresss" style="width: 95%;">95%</div>
+                  <div class="progresss" data-width="95%">95%</div>
                 </div>
               </div>
-            
+              
               <div class="progress-bar-container">
                 <div class="label">Taxation Cases Resolved</div>
                 <div class="progress-barr">
-                  <div class="progresss" style="width: 75%;">75%</div>
+                  <div class="progresss" data-width="75%">75%</div>
                 </div>
               </div>
-            
+              
               <div class="progress-bar-container">
                 <div class="label">Businesses Audited</div>
                 <div class="progress-barr">
-                  <div class="progresss" style="width: 80%;">80%</div>
+                  <div class="progresss" data-width="80%">80%</div>
                 </div>
               </div>
-            
+              
               <div class="progress-bar-container">
                 <div class="label">Labour Disputes</div>
                 <div class="progress-barr">
-                  <div class="progresss" style="width: 40%;">40%</div>
+                  <div class="progresss" data-width="65%">65%</div>
                 </div>
-              </div>
         </div>
     </section>
 
-    <div class="s1-c2-1">
+    <div class="s1-c2-1"  data-aos="fade-up"  data-aos-duration="1500">
         <div class="s2-block">
             <i class="fas fa-chart-line"></i>
             <h1 class="s2-h1">
@@ -293,9 +297,9 @@
             <hr class="s5-hr">
 
             <p class="s5-c1-p1">
-                Business is a marketing discipline focused on growing visibility in organic search engine results.encompasses both the technical and creative elements required to improve rankings, drive traffic, and increase awareness in search engines
+                Let us help you find the best solutions for your business needs. Book a free consultation today!
             </p>
-            <h3 class="s5-c1-h3">How Can We Help?</h3>
+            <h3 class="s5-c1-h3" style="font-size: 18px;">How Can We Help?</h3>
 
             
         </div>
@@ -402,5 +406,8 @@
         </p>
     </footer>
     
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

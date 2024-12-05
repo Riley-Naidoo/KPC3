@@ -7,6 +7,30 @@
 *{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+}
+
+p, h1{
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #DE5B15; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f0f0f0; 
+}
+
+::selection {
+    background-color: #DE5B15; 
+    color: white; 
 }
 
 .highlight{
@@ -43,12 +67,23 @@
     font-size: 20px;
 }
 
-.hero-button{
+.hero-button {
     background-color: white;
     border: none;
     color: var(--primary-color);
     width: 200px;
     height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px; /* Vertically center the text */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Hover state for the animation */
+.hero-button:hover {
+    transform: translateY(-4px); /* Slightly move the button upwards */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Drop shadow */
 }
 
 
@@ -178,6 +213,15 @@
     border: none;
     background-color: var(--primary-color);
     color: white;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Hover state for the animation */
+.s5-button:hover {
+    transform: translateY(-4px); /* Slightly move the button upwards */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Drop shadow */
+    color: white; /* Keep the text color the same when hovered */
+
 }
 
 .highlight{
@@ -231,8 +275,27 @@
     }
 
     .s5-button{
-        width: 100%;
-        margin-bottom: 20px;
+        height: 50px;
+        width: 250px;
+        padding: 0 20px;
+        border: none;
+        background-color: var(--primary-color);
+        color: white;
+        transition: all 0.3s ease; /* Smooth transition for all properties */
+    }
+    
+    /* Hover state for the animation */
+    .s5-button:hover {
+        transform: translateY(-4px); /* Slightly move the button upwards */
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Drop shadow */
+        color: white; /* Keep the text color the same when hovered */
+    
+    }
+
+    .s5-c1-h3{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 40px;
     }
     
     .section-4{

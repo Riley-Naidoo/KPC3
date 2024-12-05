@@ -9,11 +9,18 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
     <script defer src="js/nav.js"></script>
+    <script defer src="js/bars.js"></script>
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 
     <meta name="description" content="KPC3 International offers innovative solutions to help businesses scale and succeed globally. Explore our services in technology, consulting, and business development.">
 
 <!-- Meta Keywords for SEO -->
-<meta name="keywords" content="KPC3 International, business solutions, technology consulting, global business, business development, innovation, growth, scaling businesses">
+<meta name="keywords" content="KPC3, KPC3 International, financial management, accounting, accounting services, payroll, payroll services, CIDB, business registration, registering a business, central supplier, SARS, compliance, labour department, UIF, labour compliance, compensation compliance, auditing, taxes, taxation, strategies, business management, management consulting, Department of Trade & Industry, incentives, trusts, trust fund, trust funds, solutions, technology consulting, global business, business development, innovation, growth, scaling businesses">
 
 <!-- Author -->
 <meta name="author" content="KPC3 International">
@@ -62,7 +69,7 @@
             </li>
         </ul>
     </div>
-    <nav class="navbar">
+    <nav class="navbar"  style="overflow: hidden;">
         <div class="nav-upper">
             <img src="img/logo-sm.jpg" alt="KPC3 Consulting Logo" class="upper-logo">
 
@@ -72,7 +79,7 @@
                 <span></span>
             </div>
 
-            <div class="nav-links">
+            <div class="nav-links"  style="overflow: hidden;">
                 <ul>
                     <li>
                         <a href="index.html">Home</a>
@@ -112,14 +119,14 @@
         
     </nav>
     <section class="hero" style="background-image: url(img/hero.jpg);">
-        <div class="hero-s1">
-            <h1 class="hero-h1">
+        <div class="hero-s1"   data-aos="fade-right"  data-aos-duration="1500">
+            <h1 class="hero-h1" style="overflow: hidden;">
                 Streamline Your Success
             </h1>
             <p class="hero-p1">
                 Expert Accounting, Payroll, Taxation, and Business Management Services – We handle the numbers, so you can focus on what matters most: growing your business.
             </p>
-            <button class="hero-button" onclick="window.location.href='contact.html'">Contact Us</button>
+            <button class="hero-button" onclick="window.location.href=''">Contact Us</button>
         </div>
     </section>
 
@@ -141,7 +148,7 @@
             <i class="fas fa-money-bill-wave"></i>
             <h1 class="s4-block-h1">Payroll Services</h1>
             <p class="s4-block-p1">
-                We provide timely and accurate payroll processing, tax calculations, and compliance with labor laws.
+                We provide timely and accurate payroll processing, tax calculations, and compliance with labour laws.
             </p>
         </div>
         <div class="s4-block" onclick="window.location.href='services.html'">
@@ -155,7 +162,7 @@
             <i class="fas fa-briefcase"></i>
             <h1 class="s4-block-h1">Labour Department</h1>
             <p class="s4-block-p1">
-                We assist with ensuring adherence to labor laws, including employee contracts, UIF, and workman’s compensation compliance.
+                We assist with ensuring adherence to labour laws, including employee contracts, UIF, and workman’s compensation compliance.
             </p>
         </div>
         <div class="s4-block" onclick="window.location.href='services.html'">
@@ -234,15 +241,15 @@
     </section>
 
     <section class="section-1">
-        <div class="s1-c1">
+        <div class="s1-c1" data-aos="fade-right"  data-aos-duration="1500">
             <h1 class="s1-c1-h1">
                 WE DEVELOP <span class="highlight">BUSINESS SOLUTIONS</span>
             </h1>
             <p class="s1-c1-p1">
-                We Deliver Simple Solutions for Complex Problems that drive Revenue Expansion, Sustainable Profits, and Cash Flow through integration and networking.
+                We deliver Simple Solutions for Complex Problems that drive Revenue Expansion, Sustainable Profits, and Cash Flow through Integration and Networking.
             </p>
             <p class="s1-c1-p2">
-                We do this in an ethical and honest manner and will earn the respect of our clients by demonstrating our competence and professionalism in conducting business relationships.
+                Striving to deliver in an ethical and honest manner, we aim to earn the respect of our clients by demonstrating our competence and professionalism when conducting business relationships.
             </p>
             <a href="contact.html" class="s1-c1-a1">
                 Read More About Us
@@ -252,34 +259,35 @@
             <div class="progress-bar-container">
                 <div class="label">Businesses Rescued</div>
                 <div class="progress-barr">
-                  <div class="progresss" style="width: 95%;">95%</div>
+                  <div class="progresss" data-width="95%">95%</div>
                 </div>
               </div>
-            
+              
               <div class="progress-bar-container">
                 <div class="label">Taxation Cases Resolved</div>
                 <div class="progress-barr">
-                  <div class="progresss" style="width: 75%;">75%</div>
+                  <div class="progresss" data-width="75%">75%</div>
                 </div>
               </div>
-            
+              
               <div class="progress-bar-container">
                 <div class="label">Businesses Audited</div>
                 <div class="progress-barr">
-                  <div class="progresss" style="width: 80%;">80%</div>
+                  <div class="progresss" data-width="80%">80%</div>
                 </div>
               </div>
-            
+              
               <div class="progress-bar-container">
                 <div class="label">Labour Disputes</div>
                 <div class="progress-barr">
-                  <div class="progresss" style="width: 40%;">40%</div>
+                  <div class="progresss" data-width="65%">65%</div>
                 </div>
               </div>
+              
         </div>
     </section>
 
-    <div class="s1-c2-1">
+    <div class="s1-c2-1"  data-aos="fade-up"  data-aos-duration="1500">
         <div class="s2-block">
             <i class="fas fa-chart-line"></i>
             <h1 class="s2-h1">
@@ -319,42 +327,42 @@
     </div>  
 
     <section class="section-6">
-        <div class="s6-c1">
+        <div class="s6-c1"   data-aos="slide-up"  data-aos-duration="1500">
             <h1 class="s6-c1-h1">
-                How We Are <span class="highlight">Different</span>
+                What <span class="highlight">Separates</span> Us From The Rest
             </h1>
 
             <p class="s6-c1-p1">
-                We invest time with our clients at their locations actively listening, questioning and understanding their needs.
+                We invest time with our clients at their locations- actively listening, taking time to understand their needs.
             </p>
 
             <p class="s6-c1-p2">
-                Our objective is to actively partner and develop a Holistic understanding of our client’s needs so we can quickly develop the requisite winning solutions customised for our client’s specific business needs. We learn our client’s business, industry and culture so we can develop and implement strategies that drive real value and achieve predictable successful results;
+                Our objective is to actively partner and develop a holistic understanding of our client’s needs so we can efficiently develop the requisite winning solutions customised for our client’s specific business needs. We learn our client’s business, industry and culture so we can develop and implement strategies that drive real value and achieve predictable successful results;
             </p>
         </div>
 
         <div class="s6-c2">
-            <div class="s6-c2-block">
+            <div class="s6-c2-block" data-aos="fade-right" data-aos-duration="1500">
                 <h1 class="s6-c2-h1">
-                    We are a very <span class="highlight">unique</span>
+                    What Makes Us <span class="highlight">Unique</span>?
                 </h1>
                 <p class="s6-c2-p1">
-                    professional accounting and management consulting firm because we offer fully integrated management programs that can accelerate expansion that can dramatically increase your bottom and top line performance
+                    As a professional accounting and management consulting firm, we offer fully integrated management programs that can accelerate expansion that can dramatically increase your bottom and top line performance.
                 </p>
             </div>
-            <div class="s6-c2-block">
+            <div class="s6-c2-block" data-aos="fade-right" data-aos-duration="1500">
                 <h1 class="s6-c2-h1">
-                    We <span class="highlight">partner</span>
+                    How Do We <span class="highlight">Work</span>?
                 </h1>
                 <p class="s6-c2-p1">
-                    in a collaborative relationship with the objective of becoming our client’s trusted advisor. This happens as we gradually understand our client’s business needs, industry and culture so we can jointly and confidently develop winning strategies that drive real value and gets successful results                </p>
+                    We partner in a collaborative relationship with the objective of becoming our client’s trusted advisor. This happens as we gradually understand our client’s business needs, industry and culture so we can jointly and confidently develop winning strategies that drive real value and deliver successful results.</p>
             </div>
-            <div class="s6-c2-block">
+            <div class="s6-c2-block" data-aos="fade-right" data-aos-duration="1500">
                 <h1 class="s6-c2-h1">
-                    We value each <span class="highlight">relationship</span>
+                    How Do We Value Our <span class="highlight">Clients</span>?
                 </h1>
                 <p class="s6-c2-p1">
-                    as a long term relationship based on mutual honest communication and respect. We focus much of our effort on repeat business because of the service we provide                </p>
+                    We value each client as that in a long term relationship- based on mutual honest communication and respect. We focus much of our effort on repeat business because of the service we provide                </p>
             </div>
         </div>
     </section>
@@ -370,7 +378,7 @@
             <hr class="s5-hr">
 
             <p class="s5-c1-p1">
-                Business is a marketing discipline focused on growing visibility in organic search engine results.encompasses both the technical and creative elements required to improve rankings, drive traffic, and increase awareness in search engines
+                Let us help you find the best solutions for your business needs. Book a free consultation today!
             </p>
             <h3 class="s5-c1-h3">How Can We Help?</h3>
 
@@ -478,6 +486,10 @@
             KPC3 International © Copyright 2024 | By <a href="https://cortek.co.za/">Cortek Business Solutions</a>
         </p>
     </footer>
-    
+
+    <script>
+        AOS.init();
+      </script>
+      
 </body>
 </html>

@@ -7,7 +7,32 @@
 *{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
+
+p, h1, i{
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #DE5B15; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f0f0f0; 
+}
+
+::selection {
+    background-color: #DE5B15; 
+    color: white; 
+}
+
 
 .hero{
     width: 100vw;
@@ -39,13 +64,27 @@
     font-size: 20px;
 }
 
-.hero-button{
+
+
+.hero-button {
     background-color: white;
     border: none;
     color: var(--primary-color);
     width: 200px;
     height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px; /* Vertically center the text */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
 }
+
+/* Hover state for the animation */
+.hero-button:hover {
+    transform: translateY(-4px); /* Slightly move the button upwards */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
 
 .section-1{
     display: flex;
@@ -72,26 +111,29 @@
     width: 40vw;
 }
 
+/* Progress Bar Container and Label */
 .progress-bar-container {
     margin-bottom: 20px;
-  }
+}
 
-  .label {
+.label {
     font-weight: bold;
     margin-bottom: 5px;
     color: #333;
-  }
+}
 
-  .progress-barr {
+/* Progress Bar Background (Track) */
+.progress-barr {
     position: relative;
     width: 80%;
     height: 25px;
     background-color: #ddd;
     border-radius: 5px;
     overflow: hidden;
-  }
+}
 
-  .progresss {
+/* Progress Bar (Thumb) */
+.progresss {
     height: 100%;
     background-color: var(--primary-color); /* Orange color */
     text-align: right;
@@ -100,7 +142,10 @@
     color: white;
     font-weight: bold;
     border-radius: 5px 0 0 5px;
-  }
+    width: 0%; /* Initial width (hidden) */
+    transition: width 2s ease-in-out; /* Animation for width change */
+}
+
 
 .s1-c1-a1{
     color: white;
@@ -110,11 +155,15 @@
     align-content: center;  
     justify-content: center;  
     padding-left: 25px;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
 }
 
-.s1-c1-a1:hover{
-    text-decoration: none;
-    color: white;
+/* Hover state for the animation */
+.s1-c1-a1:hover {
+    transform: translateY(-4px); /* Slightly move the button upwards */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Drop shadow */
+    color: white; /* Keep the text color the same when hovered */
+
 }
 
 .s1-c2-1{
@@ -325,14 +374,15 @@
 }
 
 .s5-c1-h3{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
+    line-height: 40px;
 }
 
 .inputs{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 2px;
     width: 90%;
 }
 
@@ -351,6 +401,15 @@
     border: none;
     background-color: var(--primary-color);
     color: white;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Hover state for the animation */
+.s5-button:hover {
+    transform: translateY(-4px); /* Slightly move the button upwards */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Drop shadow */
+    color: white; /* Keep the text color the same when hovered */
+
 }
 
 .highlight{
@@ -409,6 +468,8 @@
     font-weight: 700;
     font-size: 25px;
 }
+
+
 
 @media screen and (max-width: 900px) {
     .hero{
@@ -539,6 +600,8 @@
         width: 100%;
         margin-bottom: 20px;
     }
+    
+    
 }
 
 

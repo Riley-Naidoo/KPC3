@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
     <script defer src="js/nav.js"></script>
+        <!-- AOS CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+        <!-- AOS JS -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 </head>
 <body>
@@ -79,7 +84,7 @@
     </nav>
 
     <section class="hero" style="background-image: url(img/hero.jpg);">
-        <div class="hero-s1">
+        <div class="hero-s1" data-aos="slide-right"  data-aos-duration="1500">
             <h1 class="hero-h1">
                 About Us
             </h1>
@@ -94,11 +99,12 @@
         <div class="s2-c1" style="background-image: url(img/IMG_20191206_150114150\ \(1\).jpg);">
             
         </div>
-        <div class="s2-c2">
+        <div class="s2-c2"  data-aos="fade-left"  data-aos-duration="1500">
             <div class="s2-c2-block">
                 <h1 class="s2-c2-block-h1">
                     Our <span class="highlight">Vision</span>
                 </h1>
+                <br>
                 <p class="s2-c2-block-p1">
                     To focus on the sustainable growth and development of Small and Medium businesses.
                 </p>
@@ -107,19 +113,21 @@
                 <h1 class="s2-c2-block-h1">
                     Our <span class="highlight">Mission</span>
                 </h1>
+                <br>
                 <p class="s2-c2-block-p1">
                     To deliver “Simple Solutions for Complex Problems that drive Revenue Expansion, Sustainable
-<br><br>
+
                     Profits, and Cash Flow through integration and networking”
                     <br><br>
                     We do this in an ethical and honest manner and will earn the respect of our clients by demonstrating our competence and professionalism in conducting business relationships.                </p>
             </div>
         </div>
-        <div class="s2-c3">
+        <div class="s2-c3"  data-aos="fade-right"  data-aos-duration="1500">
             <div class="s2-c3-block">
                 <h1 class="s2-c3-block-h1">
                     Our <span class="highlight">Values</span>
                 </h1>
+                <br>
                 <p class="s2-c3-block-p1">
                     AT KPC3 International we recognise that our employees, customers and the businesses we serve are the reason for 
                     our existence. The following values are the building blocks to our success and our prudent decision making:
@@ -135,7 +143,7 @@
         </div>
     </section>
 
-    <section class="section-3">
+    <section class="section-3"   data-aos="fade-left"  data-aos-duration="1500">
         <div class="s3-c1">
             <h1 class="s3-c1-h1">
                 Our <span class="highlight">Team</span>
@@ -164,7 +172,7 @@
         </div>
     </section>
 
-    <section class="section-4">
+    <section class="section-4"   data-aos="fade-right"  data-aos-duration="1500">
         <div class="s3-c1">
             <h1 class="s3-c1-h1">
                 Our <span class="highlight">Branches</span>
@@ -209,7 +217,7 @@
             <hr class="s5-hr">
 
             <p class="s5-c1-p1">
-                Business is a marketing discipline focused on growing visibility in organic search engine results.encompasses both the technical and creative elements required to improve rankings, drive traffic, and increase awareness in search engines
+                Let us help you find the best solutions for your business needs. Book a free consultation today!
             </p>
             <h3 class="s5-c1-h3">How Can We Help?</h3>
 
@@ -317,5 +325,9 @@
             KPC3 International © Copyright 2024 | By <a href="https://cortek.co.za/">Cortek Business Solutions</a>
         </p>
     </footer>
+
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
