@@ -28,3 +28,9 @@ hamMenu.addEventListener('click', () => {
     observer.observe(container);
   });
 
+  function redirectToPage(value) {
+    if (value) {
+      window.location.href = value;
+    }
+  }
+

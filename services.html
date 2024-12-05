@@ -33,9 +33,20 @@
             </li>
         </ul>
     </div>
-    <nav class="navbar">
+    <nav class="navbar"  style="overflow: hidden;">
         <div class="nav-upper">
-            <img src="img/logo-sm.jpg" alt="KPC3 Consulting Logo" class="upper-logo">
+            <div class="nav-image">
+                <img src="img/logo-sm.jpg" alt="KPC3 Consulting Logo" class="upper-logo">
+
+                <div class="nav-select">
+                    <select name="service" id="service" class="nav-select-item" required  onchange="redirectToPage(this.value)">
+                        <option value="" disabled selected>KPC3 International</option>
+                        <option value="index.html">KPC3 International</option>
+                        <option value="about-kaycee.html" onclick="window.location.href='contact.html'">Kaycee Business Consulting</option>
+                    </select>
+                </div>
+
+            </div>
 
             <div class="ham-menu">
                 <span></span>
@@ -43,7 +54,7 @@
                 <span></span>
             </div>
 
-            <div class="nav-links">
+            <div class="nav-links"  style="overflow: hidden;">
                 <ul>
                     <li>
                         <a href="index.html">Home</a>
