@@ -392,7 +392,16 @@ p, h1, i{
     padding: 0 20px;
     border: none;
     color: var(--secondary-color);
+
+    border: none;              /* Remove default border */
+    outline: none;             /* Remove default focus outline */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+
 }
+
+.s5-inputs:focus {
+    border-bottom: 2px solid #DE5B15; /* Orange border on focus */
+  }
 
 .s5-button{
     height: 50px;
