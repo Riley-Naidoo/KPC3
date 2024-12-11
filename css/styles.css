@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 p, h1, i{
@@ -44,6 +45,19 @@ p, h1, i{
     align-items: center;
     padding-left: 100px;
     
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 112px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: whitesmoke;
+    opacity: 0.6;
+    z-index: 0;
+    height: 500px;
 }
 
 .hero-s1{
@@ -228,14 +242,86 @@ p, h1, i{
 
 
 .section-2{
+    height: auto;
+    width: 90vw;
+    margin: auto;
+    padding: 100px 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    margin: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
-    width: 87vw;
-    height: 300px;
+.s2-c1{
+    height: 400px;
+    width: 45%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+
+.s2-c2{
+    height: 400px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.s2-c3{
+    height: auto;
+    width: 95%;
+    
+}
+
+.s2-c2-block{
+    height: auto;
+    width: 90%;
+}
+
+.s2-c2-block-h1{
+    font-size: 40px;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.s2-c2-block-p1{
+    font-size: 16px;
+    color: var(--secondary-color);
+    font-weight: lighter;
+}
+
+.s2-c3-block{
+    width: 100%;
+}
+
+.s2-c3-block-h1{
+    font-size: 40px;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.s2-c3-block-p1{
+    font-size: 16px;
+    color: var(--secondary-color);
+    font-weight: lighter;
+}
+
+.s2-c3-block-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.s2-c3-block-ul > li{
+    list-style-type: square;
+    font-size: 16px;
+    color: var(--secondary-color);
+    font-weight: lighter;
 }
 
 
@@ -425,6 +511,10 @@ p, h1, i{
     color: var(--primary-color);
 }
 
+.section-6{
+    margin-top: 100px;
+}
+
 .s6-c1{
     width: 90vw;
     margin: auto;
@@ -478,6 +568,75 @@ p, h1, i{
     font-size: 25px;
 }
 
+.section-7{
+    margin: 100px auto 50px auto;
+    width: 90vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.s7-c2{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.s7-c2-block{
+    height: 600px;
+    width: 45%;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.s7-block-inner1{
+    height: 70%;
+}
+
+.s7-block-inner2{
+    height: auto;
+    width: 100%;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 30px;
+    
+}
+
+.s7-block-inner2 > p{
+    color: var(--secondary-color);
+    display: flex;
+    gap: 20px;
+}
+
+.inner-icons{
+    color: var(--primary-color);
+}
+
+
+
+#inner-p1{
+    font-size: 24px;
+    color: var(--primary-color);
+        font-weight: bold;
+}
+
+.branch-frame{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
 
 
 @media screen and (max-width: 900px) {
@@ -489,6 +648,20 @@ p, h1, i{
         height: auto;
 
     }
+
+    .hero::before{
+        content: '';
+        position: absolute;
+        top: 100px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: whitesmoke;
+        opacity: 0.6;
+        z-index: 0;
+        height: auto;
+    }
+
 
     .hero-s1{
         width: 80%;
@@ -559,6 +732,26 @@ p, h1, i{
         width: 100%;
     }
 
+    .s2-c1{
+        width: 90vw;
+        margin-top: -150px;
+    }
+
+    .s2-c2{
+        width: 90vw;
+        margin: -10px;
+        height: auto;
+        margin-top: -100px
+    }
+
+    .s2-c3{
+        width: 84vw;
+        margin-top: -10px;
+    }
+
+    .section-4{
+        margin-top: -50px;
+    }
     .section-6{
         height: fit-content;
         width: 90vw;
@@ -610,6 +803,10 @@ p, h1, i{
         margin-bottom: 20px;
     }
     
+
+    .s7-c2-block{
+        width: 100%;
+    }
     
 }
 

@@ -1,4 +1,4 @@
-<script>
+
   // Function to handle the intersection observation
   function animateProgressBar(entries, observer) {
     entries.forEach(function(entry) {
@@ -32,4 +32,3 @@
     
     observer.observe(bar);  // Start observing the progress bar container
   });
-</script>

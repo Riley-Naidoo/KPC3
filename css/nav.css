@@ -64,8 +64,7 @@
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
 }
@@ -213,6 +212,10 @@
     .ham-menu.active span:nth-child(3){
         top: 50%;
         transform: translate(-50%, 50%) rotate(-45deg);
+    }
+
+    .ham-menu.active{
+        z-index: 1000;
     }
 
     .nav-image{

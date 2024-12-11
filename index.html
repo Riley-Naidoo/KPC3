@@ -55,17 +55,17 @@
 <body>
     <div class="off-screen-menu">
         <ul>
-            <li>
+            <li class="link-nav">
                 <a href="index.html">Home</a>
             </li>
-            <li>
-                <a href="about.html">About</a>
+            <li class="link-nav">
+                <a href="#about-us">About</a>
             </li>
-            <li>
-                <a href="services.html">Services</a>
+            <li class="link-nav">
+                <a href="#our-services">Services</a>
             </li>
-            <li>
-                <a href="contact.html">Contact</a>
+            <li class="link-nav">
+                <a href="#contact-us">Contact</a>
             </li>
         </ul>
     </div>
@@ -73,14 +73,6 @@
         <div class="nav-upper">
             <div class="nav-image">
                 <img src="img/kpc3-logo.png" alt="KPC3 Consulting Logo" class="upper-logo">
-
-                <div class="nav-select">
-                    <select name="service" id="service" class="nav-select-item" required  onchange="redirectToPage(this.value)">
-                        <option value="" disabled selected>KPC3 International</option>
-                        <option value="index.html">KPC3 International</option>
-                        <option value="about-kaycee.html" onclick="window.location.href='contact.html'">Kaycee Business Consulting</option>
-                    </select>
-                </div>
 
             </div>
 
@@ -93,16 +85,16 @@
             <div class="nav-links"  style="overflow: hidden;">
                 <ul>
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.html" class="link-nav">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="#about-us" class="link-nav">About</a>
                     </li>
                     <li>
-                        <a href="services.html">Services</a>
+                        <a href="#our-services" class="link-nav">Services</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="#contact-us" class="link-nav">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -141,115 +133,7 @@
         </div>
     </section>
 
-    <section class="section-4">
-        <div class="s4-block" id="s4-block1" onclick="window.location.href='services.html'">
-            <h1 class="s4-block1-h1">Our Practice Areas</h1>
-            <a class="s4-block1-p1" href="services.html">See All Practice Areas →</a>
-        </div>
 
-        <div class="s4-block" onclick="window.location.href='services.html'">
-            <i class="fas fa-calculator"></i>
-            <h1 class="s4-block-h1">Accounting</h1>
-            <p class="s4-block-p1">
-                We offer expert accounting services to ensure accurate financial reporting and compliance with regulatory standards.
-            </p>
-        </div>
-
-        <div class="s4-block" onclick="window.location.href='services.html'">
-            <i class="fas fa-money-bill-wave"></i>
-            <h1 class="s4-block-h1">Payroll Services</h1>
-            <p class="s4-block-p1">
-                We provide timely and accurate payroll processing, tax calculations, and compliance with labour laws.
-            </p>
-        </div>
-        <div class="s4-block" onclick="window.location.href='services.html'">
-            <i class="fas fa-file-invoice-dollar"></i>
-            <h1 class="s4-block-h1">SARS Compliance</h1>
-            <p class="s4-block-p1">
-                We ensure your business remains compliant with the SARS requirements, including tax filing and reporting.
-            </p>
-        </div>
-        <div class="s4-block" onclick="window.location.href='services.html'">
-            <i class="fas fa-briefcase"></i>
-            <h1 class="s4-block-h1">Labour Department</h1>
-            <p class="s4-block-p1">
-                We assist with ensuring adherence to labour laws, including employee contracts, UIF, and workman’s compensation compliance.
-            </p>
-        </div>
-        <div class="s4-block" onclick="window.location.href='services.html'">
-            <i class="fas fa-hard-hat"></i>
-            <h1 class="s4-block-h1">CIDB</h1>
-            <p class="s4-block-p1">
-                We help construction businesses with CIDB registration and compliance to access government contracts and opportunities.
-            </p>
-        </div>
-        <div class="s4-block" onclick="window.location.href='services.html'">
-            <i class="fas fa-database"></i>
-            <h1 class="s4-block-h1">CSD</h1>
-            <p class="s4-block-p1">
-                Our services include registering and maintaining your business on the Central Supplier for access to government procurement opportunities.
-            </p>
-        </div>
-
-       
-        <div class="s4-block" onclick="window.location.href='services.html'">
-            <i class="fas fa-search-dollar"></i>
-            <h1 class="s4-block-h1">Auditing</h1>
-            <p class="s4-block-p1">
-                We provide comprehensive auditing services to ensure financial accuracy, transparency, and compliance with statutory regulations.
-            </p>
-        </div>
-         <!--
-        <div class="s4-block">
-            <i class="fas fa-balance-scale"></i>
-            <h1 class="s4-block-h1">Taxation</h1>
-            <p class="s4-block-p1">
-                Efficient tax strategies tailored to optimize your financial obligations and compliance.
-            </p>
-        </div>
-
-        <div class="s4-block">
-            <i class="fas fa-chart-pie"></i>
-            <h1 class="s4-block-h1">Business Management</h1>
-            <p class="s4-block-p1">
-                Empowering businesses with strategic leadership and operational excellence.
-            </p>
-        </div>
-
-        <div class="s4-block">
-            <i class="fas fa-lightbulb"></i>
-            <h1 class="s4-block-h1">Management Consulting</h1>
-            <p class="s4-block-p1">
-                Providing expert guidance to drive growth, efficiency, and transformation.
-            </p>
-        </div>
-
-        <div class="s4-block">
-            <i class="fas fa-life-ring"></i>
-            <h1 class="s4-block-h1">Business Rescue</h1>
-            <p class="s4-block-p1">
-                Helping companies in distress to stabilize, restructure, and recover.
-            </p>
-        </div>
-
-        <div class="s4-block">
-            <i class="fas fa-hand-holding-usd"></i>
-            <h1 class="s4-block-h1">Department of Trade & Industry: Grants and Incentives</h1>
-            <p class="s4-block-p1">
-                Unlock government funding and incentives to fuel your business growth.
-            </p>
-        </div>
-
-        <div class="s4-block">
-            <i class="fas fa-lock"></i>
-            <h1 class="s4-block-h1">Trusts</h1>
-            <p class="s4-block-p1">
-                Secure your legacy and protect assets through expertly managed trusts.
-            </p>
-        </div>
-
-        -->
-    </section>
 
     <section class="section-1">
         <div class="s1-c1" data-aos="fade-right"  data-aos-duration="1500">
@@ -336,6 +220,163 @@
             </p>
         </div>
     </div>  
+    <section class="section-2" id="about-us">
+        <div class="s2-c1" style="background-image: url(img/IMG_20191206_150114150\ \(1\).jpg);">
+            
+        </div>
+        <div class="s2-c2"  data-aos="fade-left"  data-aos-duration="1500">
+            <div class="s2-c2-block">
+                <h1 class="s2-c2-block-h1">
+                    Our <span class="highlight">Vision</span>
+                </h1>
+                <br>
+                <p class="s2-c2-block-p1">
+                    To focus on the sustainable growth and development of Small and Medium businesses.
+                </p>
+            </div>
+            <div class="s2-c2-block">
+                <h1 class="s2-c2-block-h1">
+                    Our <span class="highlight">Mission</span>
+                </h1>
+                <br>
+                <p class="s2-c2-block-p1">
+                    To deliver “Simple Solutions for Complex Problems that drive Revenue Expansion, Sustainable
+
+                    Profits, and Cash Flow through integration and networking”
+                    <br><br>
+                    We do this in an ethical and honest manner and will earn the respect of our clients by demonstrating our competence and professionalism in conducting business relationships.                </p>
+            </div>
+        </div>
+        <div class="s2-c3"  data-aos="fade-right"  data-aos-duration="1500">
+            <div class="s2-c3-block">
+                <h1 class="s2-c3-block-h1">
+                    Our <span class="highlight">Values</span>
+                </h1>
+                <br>
+                <p class="s2-c3-block-p1">
+                    AT KPC3 International we recognise that our employees, customers and the businesses we serve are the reason for 
+                    our existence. The following values are the building blocks to our success and our prudent decision making:
+                </p>
+                <ul class="s2-c3-block-ul">
+                    <li>Exercise Integrity, honesty and respect –( Building Trust)</li>
+                    <li>Quality in everything we do even if it means saying “NO”- (Quality);</li>
+                    <li>Planning and Executing (Driving the devil from the detail);</li>
+                    <li>Creativity, collaboration and managed risk taking (Catalyst for Intellectual Capital);</li>
+                    <li>We are in business to serve our clients, communities and employees and achieve inter-alia financial and operational success in an open and honest manner (Balanced Profit Objective)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-4" id="our-services">
+        <div class="s4-block" id="s4-block1" onclick="window.location.href='services.html'">
+            <h1 class="s4-block1-h1">Our Practice Areas</h1>
+            <a class="s4-block1-p1" href="services.html">See All Practice Areas →</a>
+        </div>
+
+        <div class="s4-block" onclick="window.location.href='services.html'">
+            <i class="fas fa-calculator"></i>
+            <h1 class="s4-block-h1">Accounting</h1>
+            <p class="s4-block-p1">
+                We offer expert accounting services to ensure accurate financial reporting and compliance with regulatory standards.
+            </p>
+        </div>
+
+        <div class="s4-block" onclick="window.location.href='services.html'">
+            <i class="fas fa-money-bill-wave"></i>
+            <h1 class="s4-block-h1">Payroll Services</h1>
+            <p class="s4-block-p1">
+                We provide timely and accurate payroll processing, tax calculations, and compliance with labour laws.
+            </p>
+        </div>
+        <div class="s4-block" onclick="window.location.href='services.html'">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <h1 class="s4-block-h1">SARS Compliance</h1>
+            <p class="s4-block-p1">
+                We ensure your business remains compliant with the SARS requirements, including tax filing and reporting.
+            </p>
+        </div>
+        <div class="s4-block" onclick="window.location.href='services.html'">
+            <i class="fas fa-briefcase"></i>
+            <h1 class="s4-block-h1">Labour Department</h1>
+            <p class="s4-block-p1">
+                We assist with ensuring adherence to labour laws, including employee contracts, UIF, and workman’s compensation compliance.
+            </p>
+        </div>
+        <div class="s4-block" onclick="window.location.href='services.html'">
+            <i class="fas fa-hard-hat"></i>
+            <h1 class="s4-block-h1">CIDB</h1>
+            <p class="s4-block-p1">
+                We help construction businesses with CIDB registration and compliance to access government contracts and opportunities.
+            </p>
+        </div>
+        <div class="s4-block" onclick="window.location.href='services.html'">
+            <i class="fas fa-database"></i>
+            <h1 class="s4-block-h1">CSD</h1>
+            <p class="s4-block-p1">
+                Our services include registering and maintaining your business on the Central Supplier for access to government procurement opportunities.
+            </p>
+        </div>
+
+       
+        <div class="s4-block" onclick="window.location.href='services.html'">
+            <i class="fas fa-search-dollar"></i>
+            <h1 class="s4-block-h1">Auditing</h1>
+            <p class="s4-block-p1">
+                We provide comprehensive auditing services to ensure financial accuracy, transparency, and compliance with statutory regulations.
+            </p>
+        </div>
+
+        <div class="s4-block">
+            <i class="fas fa-balance-scale"></i>
+            <h1 class="s4-block-h1">Taxation</h1>
+            <p class="s4-block-p1">
+                Efficient tax strategies tailored to optimize your financial obligations and compliance.
+            </p>
+        </div>
+
+        <div class="s4-block">
+            <i class="fas fa-chart-pie"></i>
+            <h1 class="s4-block-h1">Business Management</h1>
+            <p class="s4-block-p1">
+                Empowering businesses with strategic leadership and operational excellence.
+            </p>
+        </div>
+
+        <div class="s4-block">
+            <i class="fas fa-lightbulb"></i>
+            <h1 class="s4-block-h1">Management Consulting</h1>
+            <p class="s4-block-p1">
+                Providing expert guidance to drive growth, efficiency, and transformation.
+            </p>
+        </div>
+
+        <div class="s4-block">
+            <i class="fas fa-life-ring"></i>
+            <h1 class="s4-block-h1">Business Rescue</h1>
+            <p class="s4-block-p1">
+                Helping companies in distress to stabilize, restructure, and recover.
+            </p>
+        </div>
+
+        <div class="s4-block">
+            <i class="fas fa-hand-holding-usd"></i>
+            <h1 class="s4-block-h1">Department of Trade & Industry: Grants and Incentives</h1>
+            <p class="s4-block-p1">
+                Unlock government funding and incentives to fuel your business growth.
+            </p>
+        </div>
+
+        <div class="s4-block">
+            <i class="fas fa-lock"></i>
+            <h1 class="s4-block-h1">Trusts</h1>
+            <p class="s4-block-p1">
+                Secure your legacy and protect assets through expertly managed trusts.
+            </p>
+        </div>
+
+ 
+    </section>
 
     <section class="section-6">
         <div class="s6-c1"   data-aos="slide-up"  data-aos-duration="1500">
@@ -378,7 +419,43 @@
         </div>
     </section>
 
-    <section class="section-5">
+
+
+    <section class="section-7"   data-aos="fade-right"  data-aos-duration="1500">
+        <div class="s7-c1">
+            <h1 class="s3-c1-h1">
+                Our <span class="highlight">Branches</span>
+            </h1>
+        </div>
+
+        <div class="s7-c2">
+            <div class="s7-c2-block">
+                <div class="s7-block-inner1">  
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.7392755964574!2d30.92215161156272!3d-29.986922074848092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7ace3d4ce4561%3A0xeb72cb8b7e1bfaab!2s14%20Saunders%20Ave%2C%20Isipingo%20Hills%2C%20Isipingo%2C%204133!5e0!3m2!1sen!2sza!4v1733314138781!5m2!1sen!2sza"  loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="branch-frame"></iframe>
+                </div>
+                <div class="s7-block-inner2">
+                    <p id="inner-p1">Isipingo</p>
+                    <p class="b1-p1"><i class="fas fa-map-marker-alt inner-icons"></i> 14 Saunders Ave, Isipingo Hills, Isipingo, 4133</p>
+                    <p class="b1-p1"><i class="fas fa-phone inner-icons"></i> 031 902 2467</p>
+                    <p class="b1-p1"><i class="fas fa-envelope inner-icons"></i> info@kpc3.co.za</p>
+                </div>
+                
+            </div>
+            <div class="s7-c2-block">
+                <div class="s7-block-inner1">  
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19578.28043645053!2d31.010770698670388!3d-29.835885644433993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef707634193d8d7%3A0x872c95d9334b43c5!2s69%20Henwood%20Rd%2C%20Windermere%2C%20Berea%2C%204001!5e0!3m2!1sen!2sza!4v1733314206817!5m2!1sen!2sza"  loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="branch-frame"></iframe>
+                </div>
+                <div class="s7-block-inner2">
+                    <p id="inner-p1">Morningside</p>
+                    <p class="b1-p1"><i class="fas fa-map-marker-alt inner-icons"></i> 69 Henwood Rd, Morningside, Durban, 4001</p>
+                    <p class="b1-p1"><i class="fas fa-phone inner-icons"></i> 031 303 4711</p>
+                    <p class="b1-p1"><i class="fas fa-envelope inner-icons"></i> kayceeadmin2@mweb.co.za</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-5" id="contact-us">
 
         <div class="s5-c1">
             <h1 class="s5-c1-h1">
@@ -450,13 +527,13 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="#about-us">About</a>
                     </li>
                     <li>
-                        <a href="services.html">Services</a>
+                        <a href="#our-services">Services</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="#contact-us">Contact</a>
                     </li>
                 </ul>
             </div>
